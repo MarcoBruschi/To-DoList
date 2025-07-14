@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <div class="container-addTask">
-            <input type="text" placeholder="Task" id="input-task">
-            <button type="submit" id="add-task-btn" class="addTask">+</button>
-        </div>
-        <ul id="task-list">
-            <div class="task-list-tasks">
-            </div>
-        </ul>
+  <div class="container">
+    <h1>📝 Lista de Tarefas</h1>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Digite uma tarefa..." required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filters">
+      <button id="filter-all">Todas</button>
+      <button id="filter-pending">Pendentes</button>
+      <button id="filter-completed">Concluídas</button>
     </div>
-    <div class="main">
-    </div>
-    <script src="scripts.js"></script>
+
+    <ul id="task-list"></ul>
+  </div>
+  <footer>Desenvolvido por <a href="https://github.com/MarcoBruschi">Marco</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
